@@ -1,0 +1,63 @@
+# Основные зависимости и сборка
+node_modules/
+target/
+dist/
+attached_assets/     # <--- Учтено!
+.bun-build/
+bun.lockb            # Если вдруг проскочит старый бинарный формат
+
+# Логи и временные файлы
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun-debug.log*
+
+# Секреты (обязательно!)
+.env
+.env.local
+.env.production
+
+# Редакторы и ОС
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+Thumbs.db
+
+# Мусор от систем сборки (на всякий случай)
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# Compiled Java class files
+*.class
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Package files
+*.jar
+
+# JetBrains IDE
+.idea/
+
+# Unit test reports
+TEST*.xml
+
+# SSH Ключи (КРИТИЧНО!)
+id_rsa*
+id_rsa
+id_rsa.pub
+id_rsa_deploy.pub
